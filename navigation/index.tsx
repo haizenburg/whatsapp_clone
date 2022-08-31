@@ -11,8 +11,8 @@ import { MaterialCommunityIcons, Octicons } from "@expo/vector-icons";
 
 import Colors from "../constants/Colors";
 import useColorScheme from "../hooks/useColorScheme";
-import ModalScreen from "../screens/ModalScreen";
-import NotFoundScreen from "../screens/NotFoundScreen";
+import ModalScreen from "../src/screens/ModalScreen";
+import NotFoundScreen from "../src/screens/NotFoundScreen";
 import { RootStackParamList } from "../types";
 import LinkingConfiguration from "./LinkingConfiguration";
 import MainTabNavigator from "./MainTabNavigator";

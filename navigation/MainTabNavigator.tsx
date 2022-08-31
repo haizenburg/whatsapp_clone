@@ -4,11 +4,12 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { createMaterialTopTabNavigator } from "@react-navigation/material-top-tabs";
 import { MainTabParamList, RootTabScreenProps } from "../types";
 import { FontAwesome } from "@expo/vector-icons";
-import TabOneScreen from "../screens/TabOneScreen";
-import TabTwoScreen from "../screens/TabTwoScreen";
+import TabOneScreen from "../src/screens/TabOneScreen";
+import TabTwoScreen from "../src/screens/TabTwoScreen";
 import Colors from "../constants/Colors";
 
 import { Fontisto } from "@expo/vector-icons";
+import ChatScreen from "../src/screens/ChatScreen";
 
 const MainTab = createMaterialTopTabNavigator<MainTabParamList>();
 
@@ -47,7 +48,7 @@ const MainTabNavigator = () => {
           tabBarLabel: () => null,
         })}
       />
-      <MainTab.Screen name="Chats" component={TabTwoScreen} />
+      <MainTab.Screen name="Chats" component={ChatScreen} />
       <MainTab.Screen name="Status" component={TabTwoScreen} />
       <MainTab.Screen name="Calls" component={TabTwoScreen} />
     </MainTab.Navigator>
